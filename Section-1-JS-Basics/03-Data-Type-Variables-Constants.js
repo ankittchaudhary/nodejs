@@ -56,3 +56,4 @@ console.log(getScore); //103 value can be changed in variables
 const username = "Ankit"
 username = "Ankitt"          //Cant changed
 //console.log(username);       // will give error
+

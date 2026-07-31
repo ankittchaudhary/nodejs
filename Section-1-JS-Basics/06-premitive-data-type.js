@@ -45,7 +45,13 @@ let lastName;        // here variable: lastName is declared but not initialized,
 console.log(lastName); //undefined
 
 
-//Symbol
+//Symbol  Guarantees uniqueness of the value, even if two symbols have the same description, they are still unique and not equal to each other.
+let sym1 = Symbol();
+let sym2 = Symbol();
+console.log(sym1 === sym2); //false
+
+console.log(sym1); //Symbol() //immutable and unique value
+
 let sym = Symbol('description');
 console.log(sym); //Symbol(description)
 console.log(typeof sym); //symbol

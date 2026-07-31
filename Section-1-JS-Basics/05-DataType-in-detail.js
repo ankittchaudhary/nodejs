@@ -21,7 +21,7 @@ console.log(balance.valueOf()); //1000
 
 
 /*
-================NON - PREMITIVES
+================NON - PREMITIVES================
 */
  let obj = {};
  console.log(typeof obj); //object

@@ -36,6 +36,10 @@ console.log(today.getFullYear()) //2026 //getFullYear() is method of date object
 
 
 // =======ARRAYS ========
+// Arrays are used to store multiple values in a single variable. 
+// It is a non-primitive data type in JavaScript. 
+// Arrays can hold values of different data types, including numbers, strings, objects, and even other arrays.
+
 let fruits = ["apple", "banana", "orange"]; // fruits is obj: non-premitive data type
 console.log(fruits); // [ 'apple', 'banana', 'orange' ]
 console.log(typeof fruits); // object

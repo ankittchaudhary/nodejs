@@ -1,0 +1,10 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary/editor files
+*.swp
+*.tmp
+*.log
+
+docs

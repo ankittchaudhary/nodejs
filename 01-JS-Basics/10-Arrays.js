@@ -66,4 +66,15 @@ console.log(allFruits); //["Strawberry", "Mango", "Orange", "Carrot", "Broccoli"
 let fruitsString = fruits.join(", ");
 console.log(fruitsString); // returns a string of all elements in the array separated by a comma and space //Strawberry, Mango, Orange
 
+//=========CHALLENGES=========
+
+/*
+1. You have an array named teaTypes containing "herbal tea, masala chai, adrak tea". change second element of array to jasmine tea.
+*/
+
+let teaTypes = ["hernal tea", "masala chai", "adrak chai"];
+teaTypes[1] = "Jasmine tea";           // second element is at index 1 so we are changing index 2 value to updated one
+
+console.log(teaTypes); //'hernal tea', 'Jasmine tea', 'adrak chai'
+
 

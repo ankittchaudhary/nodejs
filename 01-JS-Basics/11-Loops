@@ -1,0 +1,136 @@
+//========== LOOPS IN JS ===============
+/*
+Loops are used to execute a block of code repeatedly until a specified condition is met.
+In Js, there are several types of loops:
+    1. For Loop
+    2. While Loop
+    3. Do-While Loop
+
+    4. ForEach Loop
+
+    5. For-In Loop
+    6. For-Of Loop
+*/
+
+//========== GUIDELINES FOR WRITING LOOPS ===============
+/*
+1. keyword: for, while, do-while, forEach, for-in, for-of
+2. termination condition: is condition that will be checked before each iteration of the loop. 
+    If the condition evaluates to true, the loop will continue executing; if it evaluates to false, the loop will terminate.
+3. body of loop: is the block of code that will be executed repeatedly until the termination condition is met.
+*/
+
+//========== FOR LOOP ===============
+/*
+for loop is used to execute a block of code a specific number of times. It consists of three parts: initialization, condition, and increment/decrement.
+
+    for (initialization; condition; increment/decrement) {
+        // code to be executed
+    }
+*/
+
+// Q.1 Write a for loop that prints the numbers from 1 to 10.
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+//========== WHILE LOOP ===============
+/*
+while loop is used to execute a block of code repeatedly as long as a specified condition is true. It consists of a condition and a block of code to be executed.
+    while (condition) {
+        // code to be executed
+    }
+*/
+
+//Q.2 Write a while loop that prints the numbers from 1 to 10.
+let i = 1;                                                   // why i of for loop not creating problem? because the variable is block scoped means only accessible within the block.
+while (i <= 10) {
+    console.log(i);
+    i++; // increment the value of i by 1
+}
+
+//========== DO-WHILE LOOP ===============
+/*
+do-while loop is similar to the while loop, 
+but it guarantees that the block of code will be executed at least once, even if the condition is false. 
+It consists of a block of code to be executed and a condition.
+
+do {
+    // code to be executed
+} while (condition);
+*/
+
+// Real world example of do-while loop is when we want to prompt the user for input until they provide a valid response.
+
+//Q.3 Write a do-while loop that prints the numbers from 1 to 10.
+let j = 1;
+do {
+    console.log(j);
+    j++;
+} while (j <= 10);
+
+
+//========== FOR-EACH LOOP ===============
+/*
+forEach loop is used to execute a block of code for each element in an array. It takes a callback function as an argument, which is executed for each element in the array.
+
+    array.forEach(function(currentValue, index, arr) {
+        // code to be executed
+    });
+
+*/
+
+/*
+What is a callback function?
+- A Callback function is a function that is passed as an argument to another function and is executed after the outer function has completed its execution.
+*/
+
+// Q.4 Write a forEach loop that prints the elements of an array.
+const arr = [1, 2, 3, 4, 5];
+arr.forEach(function (element) {
+    console.log(element);
+});
+
+// or we can do 
+arr.forEach((element) => console.log(element)); // using arrow function, which is also called anonymous function because it doesn't have a name.
+
+//========== FOR-IN LOOP ===============
+/*
+for-in loop is used to iterate over the properties of an object. It takes a variable as an argument, which represents the current property being iterated over.
+    for (variable in object) {
+        // code to be executed
+    }
+*/
+
+//Q.5 Write a for-in loop that prints the properties of an object.
+const obj = { a: 1, b: 2, c: 3 };
+for (let key in obj) {
+    console.log(key + ": " + obj[key]);
+}
+
+//========== FOR-OF LOOP ===============
+/*
+for-of loop is used to iterate over the values of an iterable object, such as an array or a string. 
+It takes a variable as an argument, which represents the current value being iterated over.
+    for (variable of iterable) {
+        // code to be executed
+    }
+*/
+
+//Q.6 Write a for-of loop that prints the elements of an array.
+const arr2 = [1, 2, 3, 4, 5];
+for (let element of arr2) {
+    console.log(element); // here element is a variable that represents the current value being iterated over.
+}
+
+
+// INTERVIEW QUESTIONS
+/*
+1. What is the difference between for loop and while loop?
+- for loop is used when we know the number of iterations in advance, while while loop is used when we don't know the number of iterations in advance.
+- for loop has three parts: initialization, condition, and increment/decrement, while while loop has only a condition.
+
+2. What is difference between for-in loop and for-of loop?
+- for-in loop is used to iterate over the properties of an object, while for-of loop is used to iterate over the values of an iterable object, such as an array or a string.
+- for-in loop returns the keys of the object, while for-of loop returns the values of the iterable object.
+*/
